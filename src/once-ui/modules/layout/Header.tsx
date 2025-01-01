@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Flex, Logo, NavIcon, SmartLink, ToggleButton, UserMenu } from '@/src/once-ui/components';
+import { Button, Flex, Logo, NavIcon, SmartLink, ToggleButton, UserMenu } from '@/once-ui/components';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
@@ -121,22 +121,22 @@ const Header: React.FC<HeaderProps> = ({
                     <Flex
                         hide="s"
                         textVariant="label-default-s"
-                        fillWidth gap="4" paddingX="xl"
+                        fillWidth gap="4" paddingX="l"
                         alignItems="center">
                         <SmartLink
-                            href="/">
+                            href="">
                             Home
                         </SmartLink>
                         <SmartLink
-                            href="/courses">
-                            Courses
+                            href="">
+                            Product
                         </SmartLink>
                         <SmartLink
-                            href="/Donate">
-                            Contribute
+                            href="">
+                            Solutions
                         </SmartLink>
                         <SmartLink
-                            href="/payments">
+                            href="">
                             Pricing
                         </SmartLink>
                     </Flex>
@@ -147,12 +147,12 @@ const Header: React.FC<HeaderProps> = ({
                             size="s"
                             variant="secondary"
                             label="Login"
-                            href="#"/>
+                            href=""/>
                         <Button
                             size="s"
                             variant="primary"
                             label="Sign up"
-                            href="#"/>
+                            href=""/>
                     </Flex>
                 </Flex>
             )}
