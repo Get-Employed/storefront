@@ -124,19 +124,19 @@ const Header: React.FC<HeaderProps> = ({
                         fillWidth gap="4" paddingX="l"
                         alignItems="center">
                         <SmartLink
-                            href="">
+                            href="/">
                             Home
                         </SmartLink>
                         <SmartLink
-                            href="">
-                            Product
+                            href="/courses">
+                            Courses
                         </SmartLink>
                         <SmartLink
-                            href="">
-                            Solutions
+                            href="/blogs">
+                            Blogs
                         </SmartLink>
                         <SmartLink
-                            href="">
+                            href="/pricing">
                             Pricing
                         </SmartLink>
                     </Flex>

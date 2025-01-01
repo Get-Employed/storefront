@@ -2,25 +2,37 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, LetterFx, Arrow } from '@/once-ui/components';
+import {
+	Heading,
+	Text,
+	Flex,
+	Button,
+	Grid,
+	Icon,
+	InlineCode,
+	Logo,
+	LetterFx,
+	Arrow
+} from '@/once-ui/components';
 import Link from 'next/link';
+import {Header} from "@/once-ui/modules";
 
 export default function Home() {
 	const links = [
 		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
+			href: "https://get-employed.hashnode.dev/get-employed",
+			title: "Get Employed",
+			description: "Understand the job market",
 		},
 		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
+			href: "#",
+			title: "How to get started with Programming",
+			description: "Learn the basics of programming",
 		},
 		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
+			href: "#",
+			title: "Setting up your development environment",
+			description: "Fake it until you make it!!",
 		},
 	];
 
@@ -28,6 +40,10 @@ export default function Home() {
 		<Flex
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
+			<Header
+				name="Scott"
+				subline="Infinite Inc."
+				avatar="/images/demos/avatar_01.png" authenticated={false}			/>
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -43,7 +59,7 @@ export default function Home() {
 						<Flex
 							position="relative"
 							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}} href="https://once-ui.com"/>
+							<Logo size="xl" icon={false} style={{zIndex: '1'}} href="https://get-employed.hashnode.dev/get-employed"/>
 						</Flex>
 						<Flex
 							position="relative"
@@ -55,7 +71,7 @@ export default function Home() {
 									width: 'fit-content',
 									padding: 'var(--static-space-8) var(--static-space-16)',
 									backdropFilter: 'blur(var(--static-space-1))'}}>
-								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
+								Start by starring <span className="brand-on-background-medium">https://github.com/Get-Employed/welcome-kit.git</span>
 							</InlineCode>
 							<Heading
 								wrap="balance"
@@ -63,16 +79,16 @@ export default function Home() {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Helping designers code and developers design
+										Learn to code and Get Employed
 									</LetterFx>
 								</span>
 							</Heading>
 							<Button
 								id="readDocs"
-								href="https://once-ui.com/docs"
+								href="https://github.com/Get-Employed/welcome-kit.git"
 								variant="secondary">
 								<Flex alignItems="center">
-									Read docs
+									Get enrolled
 									<Arrow trigger="#readDocs"/>
 								</Flex>
 							</Button>
@@ -121,17 +137,17 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Once UI, <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">MIT License</Link>
+					© 2025 StellaX Technologies, <Link href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU License</Link>
 				</Text>
 				<Flex
 					gap="12">
 					<Button
-						href="https://github.com/once-ui-system/nextjs-starter"
+						href="https://github.com/Get-Employed/welcome-kit.git"
 						prefixIcon="github" size="s" variant="tertiary">
 						GitHub
 					</Button>
 					<Button
-						href="https://discord.com/invite/5EyAQ4eNdS"
+						href="#"
 						prefixIcon="discord" size="s" variant="tertiary">
 						Discord
 					</Button>
