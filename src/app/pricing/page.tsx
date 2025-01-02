@@ -11,7 +11,7 @@ import {
     Icon,
     InlineCode,
     LetterFx,
-    Arrow, AvatarGroup, Badge,
+    Arrow, AvatarGroup, Badge, Accordion,
 } from '@/once-ui/components';
 import Link from 'next/link';
 import {Header} from "@/once-ui/modules";
@@ -95,43 +95,51 @@ export default function Home() {
                         </Flex>
                     </Flex>
                     <Flex
-                        border="brand-medium"
+                        border="neutral-weak"
                         borderStyle="solid-1"
-                        direction="row"
                         gap="24"
                         padding="24"
-                        alignItems="center"
-                        justifyContent="center"
-                        radius="s"
                         onBackground="brand-strong"
-                        background="brand-medium"
+                        background="neutral-weak"
                     >
-                        <Badge
-                            effect
-                        >
-                            <b>Basic</b>
-                        </Badge>
-                        <Badge
-                            effect
-                        >
-                            <b>Intermediate</b>
-                        </Badge>
-                        <Badge
-                            effect
-                        >
-                            <b>Advanced</b>
-                        </Badge>
-                        <Badge
-                            effect
-                        >
-                            Job Ready
-                        </Badge>
-                        <Badge
-                            effect
-                        >
-                            Portfolio Review
-                        </Badge>
+                        <Text>
+                            <Accordion
+                                title="Basic"
+                            >
+                                <Text
+                                    variant="body-default-s"
+                                    onBackground="neutral-weak"
+                                >
+                                    This is the content of the accordion.
+                                </Text>
+                            </Accordion>
+                        </Text>
+                        <Text>
+                            <Accordion
+                                title="Intermediate"
+                            >
+                                <Text
+                                    variant="body-default-s"
+                                    onBackground="neutral-weak"
+                                >
+                                    This is the content of the accordion.
+                                </Text>
+                            </Accordion>
+                        </Text>
+                        <Text>
+                            <Accordion
+                                title="Advanced"
+                            >
+                                <Text
+                                    variant="body-default-s"
+                                    onBackground="neutral-weak"
+                                >
+                                    This is the content of the accordion.
+                                </Text>
+                            </Accordion>
+                        </Text>
                     </Flex>
+
                     <Grid
                         radius="l"
                         border="neutral-medium"
